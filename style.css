@@ -73,7 +73,7 @@ nav a:hover {
 
 
 /* ---------------------------
-   HERO / ABOUT
+   HERO
 ---------------------------- */
 
 .hero {
@@ -142,10 +142,6 @@ nav a:hover {
     color: #000;
 }
 
-.button.primary:hover {
-    background: #ccc;
-}
-
 
 /* ---------------------------
    PORTRAIT
@@ -200,6 +196,7 @@ nav a:hover {
 
 .section-header h2 {
     font-size: clamp(45px, 6vw, 85px);
+
     letter-spacing: -4px;
 }
 
@@ -243,7 +240,7 @@ nav a:hover {
 }
 
 .project-card:hover .project-media img {
-    transform: scale(1.025);
+    transform: scale(1.02);
 }
 
 .project-meta {
@@ -299,14 +296,14 @@ nav a:hover {
 
 
 /* ---------------------------
-   ATLAS SLIDESHOW
+   SLIDESHOW
 ---------------------------- */
 
-.atlas-slideshow {
+.slideshow {
     position: relative;
 }
 
-.atlas-arrow {
+.slide-arrow {
     position: absolute;
 
     top: 50%;
@@ -320,7 +317,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 50%;
 
     background: rgba(0, 0, 0, 0.7);
@@ -337,22 +334,22 @@ nav a:hover {
     z-index: 20;
 }
 
-.atlas-prev {
+.slide-prev {
     left: 18px;
 }
 
-.atlas-next {
+.slide-next {
     right: 18px;
 }
 
-.atlas-arrow:hover {
+.slide-arrow:hover {
     opacity: 1;
 
     background: white;
     color: black;
 }
 
-.atlas-label {
+.slide-label {
     position: absolute;
 
     bottom: 16px;
@@ -389,8 +386,16 @@ nav a:hover {
     align-items: center;
 }
 
+.experience-second {
+    margin-top: 110px;
 
-/* MELD IMAGE */
+    padding-top: 110px;
+
+    border-top: 1px solid #222;
+}
+
+
+/* EXPERIENCE IMAGE */
 
 .experience-image {
     width: 100%;
@@ -416,7 +421,7 @@ nav a:hover {
 }
 
 
-/* MELD TEXT */
+/* EXPERIENCE TEXT */
 
 .experience-content {
     max-width: 650px;
@@ -442,6 +447,8 @@ nav a:hover {
 
 .experience-role {
     color: #888;
+
+    font-size: 17px;
 
     margin-bottom: 30px;
 }
@@ -584,10 +591,6 @@ footer {
 
 @media (max-width: 900px) {
 
-    .navbar {
-        align-items: flex-start;
-    }
-
     nav {
         display: none;
     }
@@ -626,6 +629,12 @@ footer {
         height: 350px;
     }
 
+    .experience-second {
+        margin-top: 80px;
+
+        padding-top: 80px;
+    }
+
     .skills-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -659,7 +668,7 @@ footer {
         height: 280px;
     }
 
-    .atlas-arrow {
+    .slide-arrow {
         width: 40px;
         height: 40px;
 
