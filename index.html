@@ -13,9 +13,9 @@
 
 <body>
 
-    <!-- ==========================================
+    <!-- =========================
          NAVIGATION
-    =========================================== -->
+    ========================== -->
 
     <header class="navbar">
 
@@ -37,9 +37,9 @@
 
     <main>
 
-        <!-- ==========================================
+        <!-- =========================
              ABOUT / INTRO
-        =========================================== -->
+        ========================== -->
 
         <section id="about" class="hero">
 
@@ -77,8 +77,6 @@
             </div>
 
 
-            <!-- YOUR PHOTO -->
-
             <div class="portrait">
 
                 <img
@@ -92,9 +90,9 @@
 
 
 
-        <!-- ==========================================
+        <!-- =========================
              PROJECTS
-        =========================================== -->
+        ========================== -->
 
         <section id="projects" class="section">
 
@@ -111,22 +109,40 @@
             </div>
 
 
-
             <div class="project-grid">
 
 
-                <!-- ==================================
-                     ATLAS
-                =================================== -->
+                <!-- ATLAS -->
 
                 <article class="project-card">
 
-                    <div class="project-media">
+                    <div class="project-media atlas-slideshow">
 
                         <img
-                            src="./images/ATLAS_4_1.png"
-                            alt="ATLAS 4 aircraft"
+                            id="atlas-image"
+                            src="./images/ATLAS_1_1.png"
+                            alt="ATLAS aircraft development"
                         >
+
+                        <button
+                            class="atlas-arrow atlas-prev"
+                            onclick="changeAtlasSlide(-1)"
+                            aria-label="Previous ATLAS image"
+                        >
+                            &#10094;
+                        </button>
+
+                        <button
+                            class="atlas-arrow atlas-next"
+                            onclick="changeAtlasSlide(1)"
+                            aria-label="Next ATLAS image"
+                        >
+                            &#10095;
+                        </button>
+
+                        <div class="atlas-label" id="atlas-label">
+                            ATLAS 1
+                        </div>
 
                     </div>
 
@@ -146,18 +162,15 @@
                         ATLAS
                     </h3>
 
-
                     <p class="project-subtitle">
                         AddiTive Long-range Air Support
                     </p>
-
 
                     <p>
                         An independently developed series of RC aircraft
                         exploring aerodynamic design, additive manufacturing,
                         aircraft systems, rapid prototyping, and flight testing.
                     </p>
-
 
                     <a href="#" class="project-link">
                         Explore Project →
@@ -167,9 +180,7 @@
 
 
 
-                <!-- ==================================
-                     MAGIC AIRBUS
-                =================================== -->
+                <!-- MAGIC AIRBUS -->
 
                 <article class="project-card">
 
@@ -198,18 +209,15 @@
                         Magic Airbus
                     </h3>
 
-
                     <p class="project-subtitle">
                         Aircraft Design & Additive Manufacturing
                     </p>
-
 
                     <p>
                         Team aircraft development project involving
                         aerodynamic design, additive manufacturing,
                         assembly, testing, and competition flight.
                     </p>
-
 
                     <a href="#" class="project-link">
                         View Project →
@@ -219,9 +227,7 @@
 
 
 
-                <!-- ==================================
-                     BOEING 6767
-                =================================== -->
+                <!-- BOEING 6767 -->
 
                 <article class="project-card">
 
@@ -250,18 +256,15 @@
                         Boeing 6767
                     </h3>
 
-
                     <p class="project-subtitle">
                         RC Aircraft Development
                     </p>
-
 
                     <p>
                         Student aircraft project focused on lightweight
                         design, additive manufacturing, electronics
                         integration, aircraft packaging, and flight testing.
                     </p>
-
 
                     <a href="#" class="project-link">
                         View Project →
@@ -271,9 +274,7 @@
 
 
 
-                <!-- ==================================
-                     BATTLE CUPS
-                =================================== -->
+                <!-- BATTLE CUPS -->
 
                 <article class="project-card">
 
@@ -302,11 +303,9 @@
                         Battle Cups
                     </h3>
 
-
                     <p class="project-subtitle">
                         Mechanical Design & Prototyping
                     </p>
-
 
                     <p>
                         Functional product-development project involving
@@ -314,12 +313,12 @@
                         testing, and iterative mechanical design.
                     </p>
 
-
                     <a href="#" class="project-link">
                         View Project →
                     </a>
 
                 </article>
+
 
             </div>
 
@@ -327,96 +326,96 @@
 
 
 
-<!-- ==========================================
-     EXPERIENCE
-=========================================== -->
+        <!-- =========================
+             EXPERIENCE
+        ========================== -->
 
-<section id="experience" class="section">
+        <section id="experience" class="section">
 
-    <div class="section-header">
+            <div class="section-header">
 
-        <p class="section-number">
-            02
-        </p>
+                <p class="section-number">
+                    02
+                </p>
 
-        <h2>
-            Experience
-        </h2>
-
-    </div>
-
-
-    <div class="experience-feature">
-
-        <!-- MELD PHOTO -->
-
-        <div class="experience-image">
-
-            <img
-                src="./images/MELD_1.jpg"
-                alt="MELD PrintWorks additive manufacturing"
-            >
-
-        </div>
-
-
-        <!-- MELD INFORMATION -->
-
-        <div class="experience-content">
-
-            <p class="experience-date">
-                2025–2026
-            </p>
-
-            <h3>
-                MELD PrintWorks
-            </h3>
-
-            <p class="experience-role">
-                Additive Manufacturing
-            </p>
-
-
-            <p class="experience-description">
-                Supported advanced metal additive manufacturing through
-                machine setup, calibration, production monitoring,
-                dimensional inspection, quality control, and manufacturing
-                documentation.
-            </p>
-
-
-            <div class="experience-tags">
-
-                <span>
-                    Metal Additive Manufacturing
-                </span>
-
-                <span>
-                    Machine Calibration
-                </span>
-
-                <span>
-                    Dimensional Inspection
-                </span>
-
-                <span>
-                    Quality Control
-                </span>
-
-                <span>
-                    Production
-                </span>
+                <h2>
+                    Experience
+                </h2>
 
             </div>
 
-        </div>
 
-    </div>
+            <div class="experience-feature">
 
-</section>
-        <!-- ==========================================
+
+                <div class="experience-image">
+
+                    <img
+                        src="./images/MELD_1.jpg"
+                        alt="MELD PrintWorks additive manufacturing"
+                    >
+
+                </div>
+
+
+                <div class="experience-content">
+
+                    <p class="experience-date">
+                        2025–2026
+                    </p>
+
+                    <h3>
+                        MELD PrintWorks
+                    </h3>
+
+                    <p class="experience-role">
+                        Additive Manufacturing
+                    </p>
+
+
+                    <p class="experience-description">
+                        Supported advanced metal additive manufacturing through
+                        machine setup, calibration, production monitoring,
+                        dimensional inspection, quality control, and manufacturing
+                        documentation.
+                    </p>
+
+
+                    <div class="experience-tags">
+
+                        <span>
+                            Metal Additive Manufacturing
+                        </span>
+
+                        <span>
+                            Machine Calibration
+                        </span>
+
+                        <span>
+                            Dimensional Inspection
+                        </span>
+
+                        <span>
+                            Quality Control
+                        </span>
+
+                        <span>
+                            Production
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
              TOOLS & SKILLS
-        =========================================== -->
+        ========================== -->
 
         <section id="skills" class="section">
 
@@ -486,22 +485,22 @@
 
                 </div>
 
+
             </div>
 
         </section>
 
 
 
-        <!-- ==========================================
+        <!-- =========================
              CONTACT
-        =========================================== -->
+        ========================== -->
 
         <section id="contact" class="contact">
 
             <p class="eyebrow">
                 Contact
             </p>
-
 
             <h2>
                 LET'S<br>
@@ -527,13 +526,14 @@
 
         </section>
 
+
     </main>
 
 
 
-    <!-- ==========================================
+    <!-- =========================
          FOOTER
-    =========================================== -->
+    ========================== -->
 
     <footer>
 
@@ -546,6 +546,80 @@
         </p>
 
     </footer>
+
+
+
+    <!-- =========================
+         ATLAS SLIDESHOW SCRIPT
+    ========================== -->
+
+    <script>
+
+        const atlasImages = [
+            {
+                src: "./images/ATLAS_1_1.png",
+                label: "ATLAS 1"
+            },
+            {
+                src: "./images/ATLAS_2_1.png",
+                label: "ATLAS 2"
+            },
+            {
+                src: "./images/ATLAS_3_1.png",
+                label: "ATLAS 3"
+            },
+            {
+                src: "./images/ATLAS_3_2.png",
+                label: "ATLAS 3"
+            },
+            {
+                src: "./images/ATLAS_4_1.png",
+                label: "ATLAS 4"
+            },
+            {
+                src: "./images/ATLAS_4_2.png",
+                label: "ATLAS 4"
+            },
+            {
+                src: "./images/ATLAS_5_1.png",
+                label: "ATLAS 5"
+            },
+            {
+                src: "./images/ATLAS_5_2.png",
+                label: "ATLAS 5"
+            }
+        ];
+
+
+        let atlasIndex = 0;
+
+
+        function changeAtlasSlide(direction) {
+
+            atlasIndex += direction;
+
+
+            if (atlasIndex >= atlasImages.length) {
+                atlasIndex = 0;
+            }
+
+
+            if (atlasIndex < 0) {
+                atlasIndex = atlasImages.length - 1;
+            }
+
+
+            document.getElementById("atlas-image").src =
+                atlasImages[atlasIndex].src;
+
+
+            document.getElementById("atlas-label").textContent =
+                atlasImages[atlasIndex].label;
+
+        }
+
+    </script>
+
 
 </body>
 
