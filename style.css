@@ -295,93 +295,70 @@ nav a:hover {
 }
 
 
-<!-- ==========================================
-     EXPERIENCE
-=========================================== -->
+/* ---------------------------
+   EXPERIENCE
+---------------------------- */
 
-<section id="experience" class="section">
+.experience-item {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
 
-    <div class="section-header">
+    gap: 100px;
 
-        <p class="section-number">
-            02
-        </p>
+    padding: 50px 0;
 
-        <h2>
-            Experience
-        </h2>
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+}
 
-    </div>
+.experience-date {
+    color: #666;
+
+    font-size: 12px;
+
+    margin-bottom: 12px;
+}
+
+.experience-left h3 {
+    font-size: 32px;
+
+    margin-bottom: 2px;
+}
+
+.experience-role {
+    color: #888;
+}
+
+.experience-right > p {
+    color: #aaa;
+
+    font-size: 17px;
+
+    max-width: 720px;
+
+    margin-bottom: 30px;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 9px;
+}
+
+.experience-tags span {
+    border: 1px solid #333;
+
+    border-radius: 100px;
+
+    padding: 7px 13px;
+
+    color: #888;
+
+    font-size: 12px;
+}
 
 
-    <div class="experience-feature">
-
-        <!-- MELD PHOTO -->
-
-        <div class="experience-image">
-
-            <img
-                src="./images/MELD_1.jpg"
-                alt="MELD PrintWorks additive manufacturing"
-            >
-
-        </div>
-
-
-        <!-- MELD INFORMATION -->
-
-        <div class="experience-content">
-
-            <p class="experience-date">
-                2025–2026
-            </p>
-
-            <h3>
-                MELD PrintWorks
-            </h3>
-
-            <p class="experience-role">
-                Additive Manufacturing
-            </p>
-
-
-            <p class="experience-description">
-                Supported advanced metal additive manufacturing through
-                machine setup, calibration, production monitoring,
-                dimensional inspection, quality control, and manufacturing
-                documentation.
-            </p>
-
-
-            <div class="experience-tags">
-
-                <span>
-                    Metal Additive Manufacturing
-                </span>
-
-                <span>
-                    Machine Calibration
-                </span>
-
-                <span>
-                    Dimensional Inspection
-                </span>
-
-                <span>
-                    Quality Control
-                </span>
-
-                <span>
-                    Production
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
 /* ---------------------------
    SKILLS
 ---------------------------- */
