@@ -1,6 +1,6 @@
-/* ---------------------------
+/* =========================
    BASE
----------------------------- */
+========================= */
 
 * {
     margin: 0;
@@ -15,7 +15,9 @@ html {
 body {
     background: #090909;
     color: #f5f5f5;
+
     font-family: Arial, Helvetica, sans-serif;
+
     line-height: 1.6;
 }
 
@@ -30,13 +32,14 @@ a {
 }
 
 
-/* ---------------------------
+/* =========================
    NAVIGATION
----------------------------- */
+========================= */
 
 .navbar {
     position: sticky;
     top: 0;
+
     z-index: 1000;
 
     display: flex;
@@ -46,6 +49,7 @@ a {
     padding: 24px 5%;
 
     background: rgba(9, 9, 9, 0.94);
+
     border-bottom: 1px solid #222;
 
     backdrop-filter: blur(10px);
@@ -63,24 +67,28 @@ nav {
 
 nav a {
     color: #999;
+
     font-size: 14px;
+
     transition: 0.2s;
 }
 
 nav a:hover {
-    color: #fff;
+    color: white;
 }
 
 
-/* ---------------------------
+/* =========================
    HERO
----------------------------- */
+========================= */
 
 .hero {
     min-height: 90vh;
 
     display: grid;
+
     grid-template-columns: 1fr 0.9fr;
+
     align-items: center;
 
     gap: 80px;
@@ -92,7 +100,9 @@ nav a:hover {
     color: #777;
 
     font-size: 12px;
+
     text-transform: uppercase;
+
     letter-spacing: 2px;
 
     margin-bottom: 25px;
@@ -100,7 +110,9 @@ nav a:hover {
 
 .hero h1 {
     font-size: clamp(65px, 9vw, 135px);
+
     line-height: 0.82;
+
     letter-spacing: -6px;
 
     margin-bottom: 35px;
@@ -108,6 +120,7 @@ nav a:hover {
 
 .intro {
     color: #aaa;
+
     font-size: 18px;
 
     max-width: 580px;
@@ -117,6 +130,7 @@ nav a:hover {
 
 .hero-links {
     display: flex;
+
     gap: 15px;
 }
 
@@ -133,22 +147,23 @@ nav a:hover {
 }
 
 .button:hover {
-    background: #fff;
-    color: #000;
+    background: white;
+    color: black;
 }
 
 .button.primary {
-    background: #fff;
-    color: #000;
+    background: white;
+    color: black;
 }
 
 
-/* ---------------------------
+/* =========================
    PORTRAIT
----------------------------- */
+========================= */
 
 .portrait {
     width: 100%;
+
     min-height: 620px;
 
     overflow: hidden;
@@ -156,12 +171,15 @@ nav a:hover {
     background: #111;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 }
 
 .portrait img {
     width: 100%;
+
     height: auto;
 
     object-fit: contain;
@@ -170,9 +188,9 @@ nav a:hover {
 }
 
 
-/* ---------------------------
+/* =========================
    GENERAL SECTIONS
----------------------------- */
+========================= */
 
 .section {
     padding: 120px 5%;
@@ -182,6 +200,7 @@ nav a:hover {
 
 .section-header {
     display: flex;
+
     align-items: baseline;
 
     gap: 25px;
@@ -191,6 +210,7 @@ nav a:hover {
 
 .section-number {
     color: #666;
+
     font-size: 12px;
 }
 
@@ -201,12 +221,13 @@ nav a:hover {
 }
 
 
-/* ---------------------------
+/* =========================
    PROJECT GRID
----------------------------- */
+========================= */
 
 .project-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 
     gap: 90px 45px;
@@ -217,7 +238,10 @@ nav a:hover {
 }
 
 .project-media {
+    position: relative;
+
     width: 100%;
+
     height: 390px;
 
     margin-bottom: 22px;
@@ -227,30 +251,35 @@ nav a:hover {
     background: #111;
 }
 
-.project-media img,
-.project-media video {
+.project-media img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
 
+    object-position: center;
+
     display: block;
 
-    transition: transform 0.4s ease;
+    transition: transform 0.35s ease;
 }
 
 .project-card:hover .project-media img {
-    transform: scale(1.02);
+    transform: scale(1.015);
 }
 
 .project-meta {
     display: flex;
+
     justify-content: space-between;
 
     color: #666;
 
     font-size: 11px;
+
     text-transform: uppercase;
+
     letter-spacing: 1.4px;
 
     margin-bottom: 12px;
@@ -291,13 +320,13 @@ nav a:hover {
 }
 
 .project-link:hover {
-    border-color: #fff;
+    border-color: white;
 }
 
 
-/* ---------------------------
-   SLIDESHOW
----------------------------- */
+/* =========================
+   ALL SLIDESHOWS
+========================= */
 
 .slideshow {
     position: relative;
@@ -311,27 +340,32 @@ nav a:hover {
     transform: translateY(-50%);
 
     width: 46px;
+
     height: 46px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
     border-radius: 50%;
 
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.72);
+
     color: white;
 
     font-size: 20px;
 
     cursor: pointer;
 
-    opacity: 0.8;
+    opacity: 0.9;
 
     transition: 0.2s;
 
-    z-index: 20;
+    z-index: 100;
 }
 
 .slide-prev {
@@ -343,38 +377,63 @@ nav a:hover {
 }
 
 .slide-arrow:hover {
-    opacity: 1;
-
     background: white;
+
     color: black;
+
+    opacity: 1;
 }
 
 .slide-label {
     position: absolute;
 
-    bottom: 16px;
     left: 16px;
 
-    z-index: 20;
+    bottom: 16px;
+
+    z-index: 100;
 
     padding: 7px 12px;
 
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.78);
 
     color: white;
 
     font-size: 11px;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 1.4px;
+
     text-transform: uppercase;
 
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(5px);
+}
+
+.slide-count {
+    position: absolute;
+
+    right: 16px;
+
+    bottom: 16px;
+
+    z-index: 100;
+
+    padding: 7px 12px;
+
+    background: rgba(0, 0, 0, 0.78);
+
+    color: #ddd;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    backdrop-filter: blur(5px);
 }
 
 
-/* ---------------------------
+/* =========================
    EXPERIENCE
----------------------------- */
+========================= */
 
 .experience-feature {
     display: grid;
@@ -395,33 +454,47 @@ nav a:hover {
 }
 
 
-/* EXPERIENCE IMAGE */
+/* Experience image box */
 
 .experience-image {
+    position: relative;
+
     width: 100%;
-    height: 400px;
+
+    height: 430px;
 
     overflow: hidden;
 
     background: #111;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 }
 
 .experience-image img {
     width: 100%;
+
     height: 100%;
 
-    object-fit: contain;
+    object-fit: cover;
+
     object-position: center;
 
     display: block;
 }
 
 
-/* EXPERIENCE TEXT */
+/* MELD should show entire photo */
+
+.experience-second .experience-image img {
+    object-fit: contain;
+}
+
+
+/* Experience text */
 
 .experience-content {
     max-width: 650px;
@@ -457,6 +530,7 @@ nav a:hover {
     color: #aaa;
 
     font-size: 17px;
+
     line-height: 1.7;
 
     margin-bottom: 30px;
@@ -464,6 +538,7 @@ nav a:hover {
 
 .experience-tags {
     display: flex;
+
     flex-wrap: wrap;
 
     gap: 9px;
@@ -482,9 +557,9 @@ nav a:hover {
 }
 
 
-/* ---------------------------
+/* =========================
    SKILLS
----------------------------- */
+========================= */
 
 .skills-grid {
     display: grid;
@@ -517,15 +592,17 @@ nav a:hover {
 }
 
 
-/* ---------------------------
+/* =========================
    CONTACT
----------------------------- */
+========================= */
 
 .contact {
     min-height: 70vh;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
 
     padding: 120px 5%;
@@ -566,9 +643,9 @@ nav a:hover {
 }
 
 
-/* ---------------------------
+/* =========================
    FOOTER
----------------------------- */
+========================= */
 
 footer {
     display: flex;
@@ -585,9 +662,9 @@ footer {
 }
 
 
-/* ---------------------------
-   MOBILE
----------------------------- */
+/* =========================
+   TABLET / MOBILE
+========================= */
 
 @media (max-width: 900px) {
 
@@ -626,7 +703,7 @@ footer {
     }
 
     .experience-image {
-        height: 350px;
+        height: 380px;
     }
 
     .experience-second {
@@ -642,7 +719,6 @@ footer {
     .contact h2 {
         letter-spacing: -4px;
     }
-
 }
 
 
@@ -668,11 +744,24 @@ footer {
         height: 280px;
     }
 
+    .experience-image {
+        height: 300px;
+    }
+
     .slide-arrow {
         width: 40px;
+
         height: 40px;
 
         font-size: 17px;
+    }
+
+    .slide-prev {
+        left: 10px;
+    }
+
+    .slide-next {
+        right: 10px;
     }
 
     .skills-grid {
@@ -690,5 +779,4 @@ footer {
 
         gap: 6px;
     }
-
 }
