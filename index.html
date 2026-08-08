@@ -1,729 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Luke Yarnall | Mechanical Engineering</title>
-
-    <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-
-    <header class="navbar">
-        <a href="#about" class="logo">LUKE YARNALL</a>
-
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-
-    <main>
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section id="about" class="hero">
-
-            <div class="hero-text">
-
-                <p class="eyebrow">
-                    Mechanical Engineering · Virginia Tech
-                </p>
-
-                <h1>
-                    DESIGN.<br>
-                    MODEL.<br>
-                    PRINT.<br>
-                    ITERATE.
-                </h1>
-
-                <p class="intro">
-                    Mechanical engineering student focused on aerospace,
-                    additive manufacturing, CAD, rapid prototyping,
-                    and hands-on engineering.
-                </p>
-
-                <div class="hero-links">
-                    <a href="#projects" class="button primary">
-                        View Projects
-                    </a>
-
-                    <a href="#" class="button">
-                        Resume
-                    </a>
-                </div>
-
-            </div>
-
-
-            <div class="portrait">
-                <img src="./images/ME_1.png" alt="Luke Yarnall">
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-
-        <section id="projects" class="section">
-
-            <div class="section-header">
-                <p class="section-number">01</p>
-                <h2>Projects</h2>
-            </div>
-
-
-            <div class="project-grid">
-
-
-                <!-- =========================
-                     ATLAS
-                ========================== -->
-
-                <article class="project-card">
-
-                    <div class="project-media slideshow">
-
-                        <img
-                            id="atlas-image"
-                            src="./images/ATLAS_5_1.png"
-                            alt="ATLAS aircraft development"
-                        >
-
-                        <button
-                            class="slide-arrow slide-prev"
-                            onclick="changeAtlasSlide(-1)"
-                            aria-label="Previous ATLAS image"
-                        >
-                            &#10094;
-                        </button>
-
-                        <button
-                            class="slide-arrow slide-next"
-                            onclick="changeAtlasSlide(1)"
-                            aria-label="Next ATLAS image"
-                        >
-                            &#10095;
-                        </button>
-
-                        <div class="slide-label" id="atlas-label">
-                            ATLAS 5
-                        </div>
-
-                        <div class="slide-count" id="atlas-count">
-                            1 / 9
-                        </div>
-
-                    </div>
-
-
-                    <div class="project-meta">
-                        <span>01</span>
-                        <span>Independent Aircraft Development</span>
-                    </div>
-
-
-                    <h3>ATLAS</h3>
-
-                    <p class="project-subtitle">
-                        AddiTive Long-range Air Support
-                    </p>
-
-                    <p>
-                        An independently developed series of RC aircraft
-                        exploring aerodynamic design, additive manufacturing,
-                        aircraft systems, rapid prototyping, and flight testing.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        Explore Project →
-                    </a>
-
-                </article>
-
-
-
-                <!-- =========================
-                     MAGIC AIRBUS
-                ========================== -->
-
-                <article class="project-card">
-
-                    <div class="project-media slideshow">
-
-                        <img
-                            id="magic-image"
-                            src="./images/MAGICAIRBUS_1.JPG"
-                            alt="Magic Airbus aircraft project"
-                        >
-
-                        <button
-                            class="slide-arrow slide-prev"
-                            onclick="changeMagicSlide(-1)"
-                            aria-label="Previous Magic Airbus image"
-                        >
-                            &#10094;
-                        </button>
-
-                        <button
-                            class="slide-arrow slide-next"
-                            onclick="changeMagicSlide(1)"
-                            aria-label="Next Magic Airbus image"
-                        >
-                            &#10095;
-                        </button>
-
-                        <div class="slide-label">
-                            Magic Airbus
-                        </div>
-
-                        <div class="slide-count" id="magic-count">
-                            1 / 2
-                        </div>
-
-                    </div>
-
-
-                    <div class="project-meta">
-                        <span>02</span>
-                        <span>3D-PAC</span>
-                    </div>
-
-
-                    <h3>Magic Airbus</h3>
-
-                    <p class="project-subtitle">
-                        Aircraft Design & Additive Manufacturing
-                    </p>
-
-                    <p>
-                        Team aircraft development project involving
-                        aerodynamic design, additive manufacturing,
-                        assembly, testing, and competition flight.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
-
-                </article>
-
-
-
-                <!-- =========================
-                     BOEING 6767
-                ========================== -->
-
-                <article class="project-card">
-
-                    <div class="project-media slideshow">
-
-                        <img
-                            id="boeing-image"
-                            src="./images/BOEING6767_1.png"
-                            alt="Boeing 6767 aircraft project"
-                        >
-
-                        <button
-                            class="slide-arrow slide-prev"
-                            onclick="changeBoeingSlide(-1)"
-                            aria-label="Previous Boeing 6767 image"
-                        >
-                            &#10094;
-                        </button>
-
-                        <button
-                            class="slide-arrow slide-next"
-                            onclick="changeBoeingSlide(1)"
-                            aria-label="Next Boeing 6767 image"
-                        >
-                            &#10095;
-                        </button>
-
-                        <div class="slide-label">
-                            Boeing 6767
-                        </div>
-
-                        <div class="slide-count" id="boeing-count">
-                            1 / 5
-                        </div>
-
-                    </div>
-
-
-                    <div class="project-meta">
-                        <span>03</span>
-                        <span>3D-PAC</span>
-                    </div>
-
-
-                    <h3>Boeing 6767</h3>
-
-                    <p class="project-subtitle">
-                        RC Aircraft Development
-                    </p>
-
-                    <p>
-                        Student aircraft project focused on lightweight
-                        design, additive manufacturing, electronics
-                        integration, aircraft packaging, and flight testing.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
-
-                </article>
-
-
-
-                <!-- =========================
-                     BATTLE CUPS
-                ========================== -->
-
-                <article class="project-card">
-
-                    <div class="project-media">
-                        <img
-                            src="./images/BATTLECUPS_1.jpg"
-                            alt="Battle Cups prototype"
-                        >
-                    </div>
-
-
-                    <div class="project-meta">
-                        <span>04</span>
-                        <span>Product Design</span>
-                    </div>
-
-
-                    <h3>Battle Cups</h3>
-
-                    <p class="project-subtitle">
-                        Mechanical Design & Prototyping
-                    </p>
-
-                    <p>
-                        Functional product-development project involving
-                        CAD, additive manufacturing, rapid prototyping,
-                        testing, and iterative mechanical design.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             EXPERIENCE
-        ========================== -->
-
-        <section id="experience" class="section">
-
-            <div class="section-header">
-                <p class="section-number">02</p>
-                <h2>Experience</h2>
-            </div>
-
-
-
-            <!-- =========================
-                 3D-PAC EXPERIENCE
-            ========================== -->
-
-            <div class="experience-feature">
-
-                <div class="experience-image slideshow">
-
-                    <img
-                        id="pac-image"
-                        src="./images/3DPAC_3.jpg"
-                        alt="3D-PAC team and aircraft work"
-                    >
-
-                    <button
-                        class="slide-arrow slide-prev"
-                        onclick="changePacSlide(-1)"
-                        aria-label="Previous 3D-PAC image"
-                    >
-                        &#10094;
-                    </button>
-
-                    <button
-                        class="slide-arrow slide-next"
-                        onclick="changePacSlide(1)"
-                        aria-label="Next 3D-PAC image"
-                    >
-                        &#10095;
-                    </button>
-
-                    <div class="slide-label">
-                        3D-PAC
-                    </div>
-
-                    <div class="slide-count" id="pac-count">
-                        1 / 5
-                    </div>
-
-                </div>
-
-
-                <div class="experience-content">
-
-                    <p class="experience-date">
-                        Virginia Tech
-                    </p>
-
-                    <h3>3D-PAC</h3>
-
-                    <p class="experience-role">
-                        Print & Manufacturing Lead
-                    </p>
-
-                    <p class="experience-description">
-                        Led printing and manufacturing efforts for student
-                        aircraft projects, supporting fabrication, assembly,
-                        design iteration, and competition preparation.
-                    </p>
-
-                    <div class="experience-tags">
-                        <span>FDM Printing</span>
-                        <span>Manufacturing</span>
-                        <span>Aircraft Assembly</span>
-                        <span>Design Iteration</span>
-                        <span>Team Leadership</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =========================
-                 MELD EXPERIENCE
-            ========================== -->
-
-            <div class="experience-feature experience-second">
-
-                <div class="experience-image">
-                    <img
-                        src="./images/MELD_1.jpg"
-                        alt="MELD PrintWorks additive manufacturing"
-                    >
-                </div>
-
-
-                <div class="experience-content">
-
-                    <p class="experience-date">
-                        2025–2026
-                    </p>
-
-                    <h3>MELD PrintWorks</h3>
-
-                    <p class="experience-role">
-                        Additive Manufacturing
-                    </p>
-
-                    <p class="experience-description">
-                        Supported metal additive manufacturing through machine
-                        setup, calibration, production monitoring, inspection,
-                        quality control, and manufacturing support.
-                    </p>
-
-                    <div class="experience-tags">
-                        <span>Metal Additive Manufacturing</span>
-                        <span>Machine Calibration</span>
-                        <span>Inspection</span>
-                        <span>Quality Control</span>
-                        <span>Production</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             SKILLS
-        ========================== -->
-
-        <section id="skills" class="section">
-
-            <div class="section-header">
-                <p class="section-number">03</p>
-                <h2>Tools & Skills</h2>
-            </div>
-
-
-            <div class="skills-grid">
-
-                <div>
-                    <p class="skill-category">CAD & DESIGN</p>
-                    <p>SolidWorks</p>
-                    <p>Fusion 360</p>
-                </div>
-
-
-                <div>
-                    <p class="skill-category">ANALYSIS</p>
-                    <p>ANSYS</p>
-                    <p>MATLAB</p>
-                    <p>XFLR5</p>
-                </div>
-
-
-                <div>
-                    <p class="skill-category">MANUFACTURING</p>
-                    <p>Additive Manufacturing</p>
-                    <p>FDM 3D Printing</p>
-                    <p>Rapid Prototyping</p>
-                </div>
-
-
-                <div>
-                    <p class="skill-category">SYSTEMS</p>
-                    <p>Arduino</p>
-                    <p>Electronics Integration</p>
-                    <p>RC Aircraft Systems</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section id="contact" class="contact">
-
-            <p class="eyebrow">Contact</p>
-
-            <h2>
-                LET'S<br>
-                CONNECT.
-            </h2>
-
-            <div class="contact-links">
-                <a href="#">Resume ↗</a>
-                <a href="#">LinkedIn ↗</a>
-                <a href="mailto:youremail@example.com">Email ↗</a>
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <footer>
-        <p>© 2026 Luke Yarnall</p>
-        <p>Mechanical Engineering · Virginia Tech</p>
-    </footer>
-
-
-
-    <!-- =========================
-         SLIDESHOW SCRIPT
-    ========================== -->
-
-    <script>
-
-        function wrapIndex(index, length) {
-            if (index >= length) {
-                return 0;
-            }
-
-            if (index < 0) {
-                return length - 1;
-            }
-
-            return index;
+<script>
+
+    function wrapIndex(index, length) {
+        if (index >= length) {
+            return 0;
         }
 
-
-        /* =========================
-           ATLAS
-        ========================== */
-
-        const atlasImages = [
-            {
-                src: "./images/ATLAS_5_1.png",
-                label: "ATLAS 5"
-            },
-            {
-                src: "./images/ATLAS_5_3.png",
-                label: "ATLAS 5"
-            },
-            {
-                src: "./images/ATLAS_5_2.png",
-                label: "ATLAS 5"
-            },
-            {
-                src: "./images/ATLAS_4_1.png",
-                label: "ATLAS 4"
-            },
-            {
-                src: "./images/ATLAS_4_2.png",
-                label: "ATLAS 4"
-            },
-            {
-                src: "./images/ATLAS_3_1.png",
-                label: "ATLAS 3"
-            },
-            {
-                src: "./images/ATLAS_3_2.png",
-                label: "ATLAS 3"
-            },
-            {
-                src: "./images/ATLAS_2_1.png",
-                label: "ATLAS 2"
-            },
-            {
-                src: "./images/ATLAS_1_1.png",
-                label: "ATLAS 1"
-            }
-        ];
-
-        let atlasIndex = 0;
-
-
-        function changeAtlasSlide(direction) {
-
-            atlasIndex = wrapIndex(
-                atlasIndex + direction,
-                atlasImages.length
-            );
-
-            document.getElementById("atlas-image").src =
-                atlasImages[atlasIndex].src;
-
-            document.getElementById("atlas-label").textContent =
-                atlasImages[atlasIndex].label;
-
-            document.getElementById("atlas-count").textContent =
-                (atlasIndex + 1) + " / " + atlasImages.length;
+        if (index < 0) {
+            return length - 1;
         }
 
+        return index;
+    }
 
 
-        /* =========================
-           MAGIC AIRBUS
-        ========================== */
+    /* =========================
+       ATLAS
+    ========================== */
 
-        const magicImages = [
-            "./images/MAGICAIRBUS_1.JPG",
-            "./images/MAGICAIRBUS_2.JPEG"
-        ];
-
-        let magicIndex = 0;
-
-
-        function changeMagicSlide(direction) {
-
-            magicIndex = wrapIndex(
-                magicIndex + direction,
-                magicImages.length
-            );
-
-            document.getElementById("magic-image").src =
-                magicImages[magicIndex];
-
-            document.getElementById("magic-count").textContent =
-                (magicIndex + 1) + " / " + magicImages.length;
+    const atlasImages = [
+        {
+            src: "./images/ATLAS_5_1.png",
+            label: "ATLAS 5"
+        },
+        {
+            src: "./images/ATLAS_5_2.png",
+            label: "ATLAS 5"
+        },
+        {
+            src: "./images/ATLAS_4_1.png",
+            label: "ATLAS 4"
+        },
+        {
+            src: "./images/ATLAS_4_2.png",
+            label: "ATLAS 4"
+        },
+        {
+            src: "./images/ATLAS_3_1.png",
+            label: "ATLAS 3"
+        },
+        {
+            src: "./images/ATLAS_3_2.png",
+            label: "ATLAS 3"
+        },
+        {
+            src: "./images/ATLAS_2_1.png",
+            label: "ATLAS 2"
+        },
+        {
+            src: "./images/ATLAS_1_1.png",
+            label: "ATLAS 1"
         }
+    ];
+
+    let atlasIndex = 0;
+
+    function changeAtlasSlide(direction) {
+        atlasIndex = wrapIndex(
+            atlasIndex + direction,
+            atlasImages.length
+        );
+
+        document.getElementById("atlas-image").src =
+            atlasImages[atlasIndex].src;
+
+        document.getElementById("atlas-label").textContent =
+            atlasImages[atlasIndex].label;
+
+        document.getElementById("atlas-count").textContent =
+            (atlasIndex + 1) + " / " + atlasImages.length;
+    }
 
 
 
-        /* =========================
-           BOEING 6767
-        ========================== */
+    /* =========================
+       MAGIC AIRBUS
+    ========================== */
 
-        const boeingImages = [
-            "./images/BOEING6767_1.png",
-            "./images/BOEING6767_4.jpg",
-            "./images/BOEING6767_5.jpg",
-            "./images/BOEING6767_2.png",
-            "./images/BOEING6767_3.png"
-        ];
+    const magicImages = [
+        "./images/MAGICAIRBUS_1.JPG",
+        "./images/MAGICAIRBUS_2.JPEG"
+    ];
 
-        let boeingIndex = 0;
+    let magicIndex = 0;
 
+    function changeMagicSlide(direction) {
+        magicIndex = wrapIndex(
+            magicIndex + direction,
+            magicImages.length
+        );
 
-        function changeBoeingSlide(direction) {
+        document.getElementById("magic-image").src =
+            magicImages[magicIndex];
 
-            boeingIndex = wrapIndex(
-                boeingIndex + direction,
-                boeingImages.length
-            );
-
-            document.getElementById("boeing-image").src =
-                boeingImages[boeingIndex];
-
-            document.getElementById("boeing-count").textContent =
-                (boeingIndex + 1) + " / " + boeingImages.length;
-        }
+        document.getElementById("magic-count").textContent =
+            (magicIndex + 1) + " / " + magicImages.length;
+    }
 
 
 
-        /* =========================
-           3D-PAC EXPERIENCE
-        ========================== */
+    /* =========================
+       BOEING 6767
+    ========================== */
 
-        const pacImages = [
-            "./images/3DPAC_3.jpg",
-            "./images/3DPAC_4.jpg",
-            "./images/3DPAC_5.jpg",
-            "./images/3DPAC_1.jpeg",
-            "./images/3DPAC_2.jpg"
-        ];
+    const boeingImages = [
+        "./images/BOEING6767_1.png",
+        "./images/BOEING6767_2.png",
+        "./images/BOEING6767_3.png",
+        "./images/BOEING6767_4.jpg",
+        "./images/BOEING6767_5.jpg"
+    ];
 
-        let pacIndex = 0;
+    let boeingIndex = 0;
 
+    function changeBoeingSlide(direction) {
+        boeingIndex = wrapIndex(
+            boeingIndex + direction,
+            boeingImages.length
+        );
 
-        function changePacSlide(direction) {
+        document.getElementById("boeing-image").src =
+            boeingImages[boeingIndex];
 
-            pacIndex = wrapIndex(
-                pacIndex + direction,
-                pacImages.length
-            );
-
-            document.getElementById("pac-image").src =
-                pacImages[pacIndex];
-
-            document.getElementById("pac-count").textContent =
-                (pacIndex + 1) + " / " + pacImages.length;
-        }
-
-    </script>
+        document.getElementById("boeing-count").textContent =
+            (boeingIndex + 1) + " / " + boeingImages.length;
+    }
 
 
-</body>
 
-</html>
+    /* =========================
+       3D-PAC EXPERIENCE
+    ========================== */
+
+    const pacImages = [
+        "./images/3DPAC_3.jpg",
+        "./images/3DPAC_4.jpg",
+        "./images/3DPAC_1.jpeg",
+        "./images/3DPAC_2.jpg"
+    ];
+
+    let pacIndex = 0;
+
+    function changePacSlide(direction) {
+        pacIndex = wrapIndex(
+            pacIndex + direction,
+            pacImages.length
+        );
+
+        document.getElementById("pac-image").src =
+            pacImages[pacIndex];
+
+        document.getElementById("pac-count").textContent =
+            (pacIndex + 1) + " / " + pacImages.length;
+    }
+
+</script>
