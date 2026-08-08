@@ -66,8 +66,21 @@
                         View Projects
                     </a>
 
-                    <a href="#" class="button">
-                        Resume
+                    <a
+                        href="./resume/Luke%20Yarnall%20Resume.pdf"
+                        class="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Resume
+                    </a>
+
+                    <a
+                        href="./resume/Luke%20Yarnall%20Resume.pdf"
+                        class="button"
+                        download
+                    >
+                        Download Resume
                     </a>
 
                 </div>
@@ -238,7 +251,9 @@
 
                         <span>02</span>
 
-                        <span>3D-PAC</span>
+                        <span>
+                            3D-PAC
+                        </span>
 
                     </div>
 
@@ -313,7 +328,9 @@
 
                         <span>03</span>
 
-                        <span>3D-PAC</span>
+                        <span>
+                            3D-PAC
+                        </span>
 
                     </div>
 
@@ -452,7 +469,7 @@
                         class="slide-count"
                         id="pac-count"
                     >
-                        1 / 4
+                        1 / 6
                     </div>
 
                 </div>
@@ -478,18 +495,27 @@
                         design iteration, and competition preparation.
                     </p>
 
-
                     <div class="experience-tags">
 
-                        <span>FDM Printing</span>
+                        <span>
+                            FDM Printing
+                        </span>
 
-                        <span>Manufacturing</span>
+                        <span>
+                            Manufacturing
+                        </span>
 
-                        <span>Aircraft Assembly</span>
+                        <span>
+                            Aircraft Assembly
+                        </span>
 
-                        <span>Design Iteration</span>
+                        <span>
+                            Design Iteration
+                        </span>
 
-                        <span>Team Leadership</span>
+                        <span>
+                            Team Leadership
+                        </span>
 
                     </div>
 
@@ -526,7 +552,7 @@
                     </h3>
 
                     <p class="experience-role">
-                        Additive Manufacturing
+                        Metal 3D Printing Manufacturing Intern
                     </p>
 
                     <p class="experience-description">
@@ -534,7 +560,6 @@
                         machine setup, calibration, production monitoring,
                         inspection, quality control, and manufacturing support.
                     </p>
-
 
                     <div class="experience-tags">
 
@@ -597,8 +622,9 @@
                     </p>
 
                     <p>SolidWorks</p>
-
                     <p>Fusion 360</p>
+                    <p>NX Siemens</p>
+                    <p>Onshape</p>
 
                 </div>
 
@@ -610,10 +636,9 @@
                     </p>
 
                     <p>ANSYS</p>
-
                     <p>MATLAB</p>
-
                     <p>XFLR5</p>
+                    <p>Root Cause Analysis</p>
 
                 </div>
 
@@ -625,9 +650,8 @@
                     </p>
 
                     <p>Additive Manufacturing</p>
-
-                    <p>FDM 3D Printing</p>
-
+                    <p>FDM / SLA 3D Printing</p>
+                    <p>CNC Machine Operation</p>
                     <p>Rapid Prototyping</p>
 
                 </div>
@@ -636,14 +660,14 @@
                 <div>
 
                     <p class="skill-category">
-                        SYSTEMS
+                        PROGRAMMING & SYSTEMS
                     </p>
 
+                    <p>Python</p>
+                    <p>MATLAB</p>
+                    <p>Java</p>
                     <p>Arduino</p>
-
-                    <p>Electronics Integration</p>
-
-                    <p>RC Aircraft Systems</p>
+                    <p>RC Electronics</p>
 
                 </div>
 
@@ -672,15 +696,25 @@
 
             <div class="contact-links">
 
-                <a href="#">
+                <a
+                    href="./resume/Luke%20Yarnall%20Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Resume ↗
                 </a>
 
-                <a href="#">
+                <a
+                    href="https://www.linkedin.com/in/luke-yarnall-633280321/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     LinkedIn ↗
                 </a>
 
-                <a href="mailto:youremail@example.com">
+                <a
+                    href="mailto:LukeYarn8836@gmail.com"
+                >
                     Email ↗
                 </a>
 
@@ -718,10 +752,6 @@
     <script>
 
 
-        /* =========================
-           INDEX WRAPPER
-        ========================== */
-
         function wrapIndex(index, length) {
 
             if (index >= length) {
@@ -737,11 +767,9 @@
 
 
 
-        /* =====================================================
-           ATLAS SLIDESHOW
-
-           ATLAS_5_3 intentionally excluded.
-        ====================================================== */
+        /* =========================
+           ATLAS
+        ========================== */
 
         const atlasImages = [
 
@@ -798,14 +826,11 @@
                 atlasImages.length
             );
 
-
             document.getElementById("atlas-image").src =
                 atlasImages[atlasIndex].src;
 
-
             document.getElementById("atlas-label").textContent =
                 atlasImages[atlasIndex].label;
-
 
             document.getElementById("atlas-count").textContent =
                 (atlasIndex + 1) + " / " + atlasImages.length;
@@ -814,13 +839,9 @@
 
 
 
-        /* =====================================================
-           MAGIC AIRBUS SLIDESHOW
-
-           Exact GitHub filenames:
-           MAGICAIRBUS_1.JPG
-           MAGICAIRBUS_2.JPEG
-        ====================================================== */
+        /* =========================
+           MAGIC AIRBUS
+        ========================== */
 
         const magicImages = [
 
@@ -841,10 +862,8 @@
                 magicImages.length
             );
 
-
             document.getElementById("magic-image").src =
                 magicImages[magicIndex];
-
 
             document.getElementById("magic-count").textContent =
                 (magicIndex + 1) + " / " + magicImages.length;
@@ -853,12 +872,9 @@
 
 
 
-        /* =====================================================
-           BOEING 6767 SLIDESHOW
-
-           IMPORTANT:
-           Photos 4 and 5 are .JPG — uppercase.
-        ====================================================== */
+        /* =========================
+           BOEING 6767
+        ========================== */
 
         const boeingImages = [
 
@@ -885,10 +901,8 @@
                 boeingImages.length
             );
 
-
             document.getElementById("boeing-image").src =
                 boeingImages[boeingIndex];
-
 
             document.getElementById("boeing-count").textContent =
                 (boeingIndex + 1) + " / " + boeingImages.length;
@@ -897,25 +911,19 @@
 
 
 
-        /* =====================================================
-           3D-PAC SLIDESHOW
-
-           Exact GitHub filenames:
-           3DPAC_1.jpeg
-           3DPAC_2.JPG
-           3DPAC_3.JPG
-           3DPAC_4.JPG
-
-           3DPAC_5 intentionally excluded.
-
-           Starts with image 3.
-        ====================================================== */
+        /* =========================
+           3D-PAC
+        ========================== */
 
         const pacImages = [
 
             "./images/3DPAC_3.JPG",
 
             "./images/3DPAC_4.JPG",
+
+            "./images/3DPAC_5.JPG",
+
+            "./images/3DPAC_6.jpeg",
 
             "./images/3DPAC_1.jpeg",
 
@@ -934,10 +942,8 @@
                 pacImages.length
             );
 
-
             document.getElementById("pac-image").src =
                 pacImages[pacIndex];
-
 
             document.getElementById("pac-count").textContent =
                 (pacIndex + 1) + " / " + pacImages.length;
