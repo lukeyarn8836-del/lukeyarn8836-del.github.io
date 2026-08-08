@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-
 <body>
 
     <!-- =========================
@@ -34,11 +33,10 @@
     </header>
 
 
-
     <main>
 
         <!-- =========================
-             ABOUT
+             ABOUT / HERO
         ========================== -->
 
         <section id="about" class="hero">
@@ -51,8 +49,8 @@
 
                 <h1>
                     DESIGN.<br>
-                    BUILD.<br>
-                    TEST.<br>
+                    MODEL.<br>
+                    PRINT.<br>
                     ITERATE.
                 </h1>
 
@@ -118,16 +116,16 @@
 
                 <article class="project-card">
 
-                    <div class="project-media atlas-slideshow">
+                    <div class="project-media slideshow">
 
                         <img
                             id="atlas-image"
-                            src="./images/ATLAS_5_2.png"
+                            src="./images/ATLAS_5_1.png"
                             alt="ATLAS aircraft development"
                         >
 
                         <button
-                            class="atlas-arrow atlas-prev"
+                            class="slide-arrow slide-prev"
                             onclick="changeAtlasSlide(-1)"
                             aria-label="Previous ATLAS image"
                         >
@@ -135,17 +133,14 @@
                         </button>
 
                         <button
-                            class="atlas-arrow atlas-next"
+                            class="slide-arrow slide-next"
                             onclick="changeAtlasSlide(1)"
                             aria-label="Next ATLAS image"
                         >
                             &#10095;
                         </button>
 
-                        <div
-                            class="atlas-label"
-                            id="atlas-label"
-                        >
+                        <div class="slide-label" id="atlas-label">
                             ATLAS 5
                         </div>
 
@@ -167,18 +162,15 @@
                         ATLAS
                     </h3>
 
-
                     <p class="project-subtitle">
                         AddiTive Long-range Air Support
                     </p>
-
 
                     <p>
                         An independently developed series of RC aircraft
                         exploring aerodynamic design, additive manufacturing,
                         aircraft systems, rapid prototyping, and flight testing.
                     </p>
-
 
                     <a href="#" class="project-link">
                         Explore Project →
@@ -194,12 +186,33 @@
 
                 <article class="project-card">
 
-                    <div class="project-media">
+                    <div class="project-media slideshow">
 
                         <img
-                            src="./images/MAGICAIRBUS_1.JPG"
+                            id="magic-image"
+                            src="./images/MAGICAIRBUS_1.jpg"
                             alt="Magic Airbus aircraft project"
                         >
+
+                        <button
+                            class="slide-arrow slide-prev"
+                            onclick="changeMagicSlide(-1)"
+                            aria-label="Previous Magic Airbus image"
+                        >
+                            &#10094;
+                        </button>
+
+                        <button
+                            class="slide-arrow slide-next"
+                            onclick="changeMagicSlide(1)"
+                            aria-label="Next Magic Airbus image"
+                        >
+                            &#10095;
+                        </button>
+
+                        <div class="slide-label">
+                            Magic Airbus
+                        </div>
 
                     </div>
 
@@ -219,18 +232,15 @@
                         Magic Airbus
                     </h3>
 
-
                     <p class="project-subtitle">
                         Aircraft Design & Additive Manufacturing
                     </p>
-
 
                     <p>
                         Team aircraft development project involving
                         aerodynamic design, additive manufacturing,
                         assembly, testing, and competition flight.
                     </p>
-
 
                     <a href="#" class="project-link">
                         View Project →
@@ -246,12 +256,33 @@
 
                 <article class="project-card">
 
-                    <div class="project-media">
+                    <div class="project-media slideshow">
 
                         <img
+                            id="boeing-image"
                             src="./images/BOEING6767_1.png"
                             alt="Boeing 6767 aircraft project"
                         >
+
+                        <button
+                            class="slide-arrow slide-prev"
+                            onclick="changeBoeingSlide(-1)"
+                            aria-label="Previous Boeing 6767 image"
+                        >
+                            &#10094;
+                        </button>
+
+                        <button
+                            class="slide-arrow slide-next"
+                            onclick="changeBoeingSlide(1)"
+                            aria-label="Next Boeing 6767 image"
+                        >
+                            &#10095;
+                        </button>
+
+                        <div class="slide-label">
+                            Boeing 6767
+                        </div>
 
                     </div>
 
@@ -271,18 +302,15 @@
                         Boeing 6767
                     </h3>
 
-
                     <p class="project-subtitle">
                         RC Aircraft Development
                     </p>
-
 
                     <p>
                         Student aircraft project focused on lightweight
                         design, additive manufacturing, electronics
                         integration, aircraft packaging, and flight testing.
                     </p>
-
 
                     <a href="#" class="project-link">
                         View Project →
@@ -323,11 +351,9 @@
                         Battle Cups
                     </h3>
 
-
                     <p class="project-subtitle">
                         Mechanical Design & Prototyping
                     </p>
-
 
                     <p>
                         Functional product-development project involving
@@ -335,13 +361,11 @@
                         testing, and iterative mechanical design.
                     </p>
 
-
                     <a href="#" class="project-link">
                         View Project →
                     </a>
 
                 </article>
-
 
             </div>
 
@@ -368,10 +392,84 @@
             </div>
 
 
+            <!-- =========================
+                 3D-PAC EXPERIENCE
+            ========================== -->
+
             <div class="experience-feature">
 
+                <div class="experience-image slideshow">
 
-                <!-- MELD IMAGE -->
+                    <img
+                        id="pac-image"
+                        src="./images/3DPAC_1.jpeg"
+                        alt="3D-PAC aircraft manufacturing and team experience"
+                    >
+
+                    <button
+                        class="slide-arrow slide-prev"
+                        onclick="changePacSlide(-1)"
+                        aria-label="Previous 3D-PAC image"
+                    >
+                        &#10094;
+                    </button>
+
+                    <button
+                        class="slide-arrow slide-next"
+                        onclick="changePacSlide(1)"
+                        aria-label="Next 3D-PAC image"
+                    >
+                        &#10095;
+                    </button>
+
+                    <div class="slide-label">
+                        3D-PAC
+                    </div>
+
+                </div>
+
+
+                <div class="experience-content">
+
+                    <p class="experience-date">
+                        Virginia Tech
+                    </p>
+
+                    <h3>
+                        3D-PAC
+                    </h3>
+
+                    <p class="experience-role">
+                        Print & Manufacturing Lead
+                    </p>
+
+                    <p class="experience-description">
+                        Led printing and manufacturing efforts for student
+                        aircraft projects, supporting fabrication, assembly,
+                        design iteration, and competition preparation.
+                    </p>
+
+                    <div class="experience-tags">
+
+                        <span>FDM Printing</span>
+                        <span>Manufacturing</span>
+                        <span>Aircraft Assembly</span>
+                        <span>Design Iteration</span>
+                        <span>Team Leadership</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 MELD EXPERIENCE
+            ========================== -->
+
+            <div class="experience-feature experience-second">
 
                 <div class="experience-image">
 
@@ -383,55 +481,33 @@
                 </div>
 
 
-
-                <!-- MELD INFORMATION -->
-
                 <div class="experience-content">
 
                     <p class="experience-date">
                         2025–2026
                     </p>
 
-
                     <h3>
                         MELD PrintWorks
                     </h3>
-
 
                     <p class="experience-role">
                         Additive Manufacturing
                     </p>
 
-
                     <p class="experience-description">
-                        Supported advanced metal additive manufacturing
-                        through machine setup, calibration, production
-                        monitoring, dimensional inspection, quality control,
-                        and manufacturing documentation.
+                        Supported metal additive manufacturing through
+                        machine setup, calibration, production monitoring,
+                        inspection, quality control, and manufacturing support.
                     </p>
-
 
                     <div class="experience-tags">
 
-                        <span>
-                            Metal Additive Manufacturing
-                        </span>
-
-                        <span>
-                            Machine Calibration
-                        </span>
-
-                        <span>
-                            Dimensional Inspection
-                        </span>
-
-                        <span>
-                            Quality Control
-                        </span>
-
-                        <span>
-                            Production
-                        </span>
+                        <span>Metal Additive Manufacturing</span>
+                        <span>Machine Calibration</span>
+                        <span>Inspection</span>
+                        <span>Quality Control</span>
+                        <span>Production</span>
 
                     </div>
 
@@ -532,12 +608,10 @@
                 Contact
             </p>
 
-
             <h2>
                 LET'S<br>
                 CONNECT.
             </h2>
-
 
             <div class="contact-links">
 
@@ -556,7 +630,6 @@
             </div>
 
         </section>
-
 
     </main>
 
@@ -581,81 +654,158 @@
 
 
     <!-- =========================
-         ATLAS SLIDESHOW
+         SLIDESHOW JAVASCRIPT
     ========================== -->
 
     <script>
 
+        /* ATLAS */
+
         const atlasImages = [
-
-            {
-                src: "./images/ATLAS_5_2.png",
-                label: "ATLAS 5"
-            },
-
             {
                 src: "./images/ATLAS_5_1.png",
                 label: "ATLAS 5"
             },
-
             {
-                src: "./images/ATLAS_4_2.png",
-                label: "ATLAS 4"
+                src: "./images/ATLAS_5_3.png",
+                label: "ATLAS 5"
             },
-
+            {
+                src: "./images/ATLAS_5_2.png",
+                label: "ATLAS 5"
+            },
             {
                 src: "./images/ATLAS_4_1.png",
                 label: "ATLAS 4"
             },
-
             {
-                src: "./images/ATLAS_3_2.png",
-                label: "ATLAS 3"
+                src: "./images/ATLAS_4_2.png",
+                label: "ATLAS 4"
             },
-
             {
                 src: "./images/ATLAS_3_1.png",
                 label: "ATLAS 3"
             },
-
+            {
+                src: "./images/ATLAS_3_2.png",
+                label: "ATLAS 3"
+            },
             {
                 src: "./images/ATLAS_2_1.png",
                 label: "ATLAS 2"
             },
-
             {
                 src: "./images/ATLAS_1_1.png",
                 label: "ATLAS 1"
             }
-
         ];
 
-
         let atlasIndex = 0;
-
 
         function changeAtlasSlide(direction) {
 
             atlasIndex += direction;
 
-
             if (atlasIndex >= atlasImages.length) {
                 atlasIndex = 0;
             }
-
 
             if (atlasIndex < 0) {
                 atlasIndex = atlasImages.length - 1;
             }
 
-
             document.getElementById("atlas-image").src =
                 atlasImages[atlasIndex].src;
 
-
             document.getElementById("atlas-label").textContent =
                 atlasImages[atlasIndex].label;
+        }
 
+
+
+        /* MAGIC AIRBUS */
+
+        const magicImages = [
+            "./images/MAGICAIRBUS_1.jpg",
+            "./images/MAGICAIRBUS_2.jpeg"
+        ];
+
+        let magicIndex = 0;
+
+        function changeMagicSlide(direction) {
+
+            magicIndex += direction;
+
+            if (magicIndex >= magicImages.length) {
+                magicIndex = 0;
+            }
+
+            if (magicIndex < 0) {
+                magicIndex = magicImages.length - 1;
+            }
+
+            document.getElementById("magic-image").src =
+                magicImages[magicIndex];
+        }
+
+
+
+        /* BOEING 6767 */
+
+        const boeingImages = [
+            "./images/BOEING6767_1.png",
+            "./images/BOEING6767_4.jpg",
+            "./images/BOEING6767_5.jpg",
+            "./images/BOEING6767_2.png",
+            "./images/BOEING6767_3.png"
+        ];
+
+        let boeingIndex = 0;
+
+        function changeBoeingSlide(direction) {
+
+            boeingIndex += direction;
+
+            if (boeingIndex >= boeingImages.length) {
+                boeingIndex = 0;
+            }
+
+            if (boeingIndex < 0) {
+                boeingIndex = boeingImages.length - 1;
+            }
+
+            document.getElementById("boeing-image").src =
+                boeingImages[boeingIndex];
+        }
+
+
+
+        /* 3D-PAC EXPERIENCE */
+
+        const pacImages = [
+            "./images/3DPAC_1.jpeg",
+            "./images/3DPAC_2.jpg",
+            "./images/3DPAC_3.jpg",
+            "./images/3DPAC_4.jpg",
+            "./images/3DPAC_5.jpg"
+        ];
+
+        let pacIndex = 0;
+
+        function changePacSlide(direction) {
+
+            pacIndex += direction;
+
+            if (pacIndex >= pacImages.length) {
+                pacIndex = 0;
+            }
+
+            if (pacIndex < 0) {
+                pacIndex = pacImages.length - 1;
+            }
+
+            document.getElementById("pac-image").src =
+                pacImages[pacIndex];
         }
 
     </script>
