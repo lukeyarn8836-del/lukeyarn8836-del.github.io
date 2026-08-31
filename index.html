@@ -39,8 +39,11 @@
                     <a href="./resume/Luke%20Yarnall%20Resume.pdf" class="button" download>Download Resume</a>
                 </div>
             </div>
-            <div class="portrait">
-                <img src="./images/ME_1.png" alt="Luke Yarnall">
+            <div class="portrait slideshow">
+                <img id="portrait-image" src="./images/ME_1.png" alt="Luke Yarnall">
+                <button class="slide-arrow slide-prev" onclick="changePortraitSlide(-1)" aria-label="Previous photo">❮</button>
+                <button class="slide-arrow slide-next" onclick="changePortraitSlide(1)" aria-label="Next photo">❯</button>
+                <div class="slide-count" id="portrait-count">1 / 3</div>
             </div>
         </section>
 
@@ -326,6 +329,19 @@
             return index;
         }
 
+        /* ========================= PORTRAIT ========================== */
+        const portraitImages = [
+            "./images/ME_1.png",
+            "./images/ME_2.png",
+            "./images/ME_3.png"
+        ];
+        let portraitIndex = 0;
+        function changePortraitSlide(direction) {
+            portraitIndex = wrapIndex(portraitIndex + direction, portraitImages.length);
+            document.getElementById("portrait-image").src = portraitImages[portraitIndex];
+            document.getElementById("portrait-count").textContent = (portraitIndex + 1) + " / " + portraitImages.length;
+        }
+
         /* ========================= ATLAS ========================== */
         const atlasImages = [
             { src: "./images/ATLAS_5_1.png", label: "ATLAS 5" },
@@ -396,7 +412,6 @@
             { src: "./images/Penholder_Drawing.png", label: "Plotter Drawing Output" }
         ];
         let penholderIndex = 0;
-
         function changePenholderSlide(direction) {
             penholderIndex = wrapIndex(penholderIndex + direction, penholderImages.length);
             document.getElementById("penholder-image").src = penholderImages[penholderIndex].src;
@@ -405,16 +420,15 @@
         }
 
         /* ========================= SOLIDWORKS PRACTICE ========================== */
-const swPracticeImages = [
-    { src: "./images/Practice_1_Vase.png", label: "Vase Model" },
-    { src: "./images/Practice_2_Cup.png", label: "Cup Model" },
-    { src: "./images/Practice_3_Container.png", label: "Container Model" },
-    { src: "./images/Practice_3_Mug.png", label: "Mug Model" },
-    { src: "./images/Solidworks_PracticeProblem_1_7.png", label: "Practice Part 1" },
-    { src: "./images/Solidworks_PracticeProblem_2_5.png", label: "Practice Part 2" }
-];
+        const swPracticeImages = [
+            { src: "./images/Practice_1_Vase.png", label: "Vase Model" },
+            { src: "./images/Practice_2_Cup.png", label: "Cup Model" },
+            { src: "./images/Practice_3_Container.png", label: "Container Model" },
+            { src: "./images/Practice_3_Mug.png", label: "Mug Model" },
+            { src: "./images/Solidworks_PracticeProblem_1_7.png", label: "Practice Part 1" },
+            { src: "./images/Solidworks_PracticeProblem_2_5.png", label: "Practice Part 2" }
+        ];
         let swPracticeIndex = 0;
-
         function changeSwPracticeSlide(direction) {
             swPracticeIndex = wrapIndex(swPracticeIndex + direction, swPracticeImages.length);
             document.getElementById("swpractice-image").src = swPracticeImages[swPracticeIndex].src;
